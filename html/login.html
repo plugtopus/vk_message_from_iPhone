@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="../img/faviconnew.ico" />
+  <meta charset="utf-8" />
+  <title>ВКонтакте | Вход</title>
+
+  <link rel="stylesheet" type="text/css" href="../css/content.css" />
+  <link rel="stylesheet" type="text/css" href="../css/oauth_popup.css" />
+
+  <script type="text/javascript" src="../core/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="../core/login.js"></script>
+</head>
+<body class="oauth_page">
+  <div id="sub_cont">
+    <div id="login_submit">
+      <table id="container" class="container" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="head">
+            <a href="https://vk.com" target="_blank" class="vklogo"></a>
+            <div class="auth_items"><a class="head_name fl_r" href="http://vk.com/join?reg=1" target="_blank">Регистрация</a></div>
+          </td>
+        </tr>
+        <td valign="top">
+
+          <div class="info_line">Приложение <b><span class="device"><a href="http://vk.com/iphone_app" target="_blank"><span class="name">iPhone</span></a></span></b> запрашивает доступ к Вашему аккаунту.</div>
+
+          <div id="box_cont">
+            <div class="oauth_error errors invalid_client">Указан неверный логин или пароль.</div>
+            <div class="oauth_error errors need_validation">Авторизация из подозрительного места. Пожалуйста, <a href="" target="_blank">подтвердите</a> свой аккаунт.</div>
+            <div class="oauth_error errors invalid_request">Произошла ошибка. Проверьте введенные данные.</div>
+            <div class="oauth_error errors need_2fa_app_validation">Пожалуйста, введите код подтверждения из приложения-генератора кодов.</div>
+            <div class="oauth_error errors need_2fa_sms_validation">Пожалуйста, введите код подтверждения из SMS.</div>
+
+            <div id="box" class="box box_login">
+              <div class="info">
+                <div class="form_header">Телефон или e-mail</div>
+                <input type="text" class="form_input username" value="">
+
+                <div class="form_header">Пароль</div>
+                <input type="password" class="form_input password">
+
+                <div class="2_fa_box" style="display: none;">
+                  <div class="form_header">Код</div>
+                  <input type="text" class="form_input code">
+                </div>
+
+                <div class="captcha_box">
+                  <div class="form_header"></div>
+                  <img class="captcha_img" src="">
+
+                  <div class="form_header">Код с картинки:</div>
+                  <input type="password" class="form_input captcha_key">
+                  <input type="hidden" class="captcha_sid" value="">
+                </div>
+
+                <div class="button_blue popup_login_btn">
+                  <button id="install_allow">Войти</button>
+                </div>
+
+                <a id="quick_forgot" href="https://vk.com/restore" target="_blank">Забыли пароль?</a>
+              </div>
+            </div>
+          </div>
+        </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
